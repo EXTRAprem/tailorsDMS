@@ -4,6 +4,20 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+a {
+  background: 
+    linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)),
+    linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 1), rgba(255, 0, 0, 1));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a:hover,
+a:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
 body
 {
 	background-image: url(wall12.jpg);
@@ -81,4 +95,3 @@ img
 {
 	max-width: 100%;
 	height: auto;
-}
